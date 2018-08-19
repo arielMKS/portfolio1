@@ -1,0 +1,140 @@
+html {
+  --base-spacing: 60%;
+  background-color: #e0ebeb;
+}
+body {
+  /*font-family: 'Muli', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ======== section1 start here ======== */
+.section1 nav ul.topnav { /* styles for the navigation */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333;*/
+}
+.section1 nav ul.topnav li {float: right;}
+.section1 nav ul.topnav li a {
+  display: block;
+  color: #33ff33;
+  text-align: center;
+  padding: 1em 1.1em;
+  text-decoration: none;
+}
+.section1 nav ul.topnav li a:hover:not(.active),
+ .section1 nav ul.topnav li a:hover {
+  margin-bottom: 0;
+  text-decoration: underline red;
+}
+/*.section1 ul.topnav li.left {float: left;}*/
+
+.section1 nav ul.topnav li a.active { /*link to download button*/
+  color: blue;
+}
+
+
+/* ======== Resume starts here ======== */
+.resume-container .show-inline {
+  display: inline;
+}
+.resume-container h1, h2, h3, h4, p {
+  font-weight: normal;
+  padding: .07em;
+  margin: .07em;
+}
+.resume-container {
+  background-color: #ffffff;
+  padding: 3em;
+  position: relative;
+  font-family: 'Times New Roman', sans-serif;
+  margin: 0 auto;
+  /*width: 690px;*/
+  width: var(--base-spacing);   /* base-spacing is a variable declared on top of page */
+  border: 1px solid black;
+}
+.header {
+  margin: 0 auto;
+  text-align: center;
+}
+div.header > h1, div.header > h3 {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+div.contact-info {
+  border-top: 1px solid blue;
+  /*border-bottom: 1px solid blue;*/
+  margin-bottom: 5px;
+}
+div.contact-info a {
+  text-decoration: none;
+}
+div.contact-info a:hover {
+  text-decoration: underline;
+}
+.recent-projects #cargo {
+  color: inherit;
+}
+div.technical-skills h3, div.technical-skills h4,
+div.summary h3, div.summary h4 {
+  display: inline;
+}
+
+div.summary {
+  /*border: 1px solid red;*/
+  padding-bottom: .25em;
+}
+.resume-container div > ul {
+  list-style: none;
+}
+
+.resume-container div ul, .resume-container div h3 {
+  margin: .2em 0;
+}
+
+span {
+  padding: 0 .1em;
+}
+div.technical-skills h3 > span { /*flush "Technical Skills" back to left*/
+  padding: 0;
+}
+.resume-container {
+  color: #333333;
+}
+.resume-container span {
+  color: blue;
+}
+
+
+/*media query start here*/
+@media screen and (max-width: 576px) {
+  html {
+    --base-spacing: 90%;
+  }
+  .resume-container {
+    padding: .25em;
+  }
+
+  .header .contact-info{
+    font-size: 85%;
+    text-align: left;
+  }
+
+  .resume-container ul {
+    padding-left: 1.5em;
+  }
+
+  .recent-projects #cargo {
+    font-size: 80%;
+    word-wrap: break-word;
+  }
+} /*end media query */
+
+/* ======== max-width 768px start here ======== */
+@media screen and (max-width: 768px) {
+  .section1 nav ul.topnav li { /*align the navigation items vertically*/
+    float: none;
+  }
+} /*end media query */
