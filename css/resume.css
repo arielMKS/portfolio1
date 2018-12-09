@@ -3,20 +3,18 @@ html {
   background-color: #e0ebeb;
 }
 body {
-  /*font-family: 'Muli', sans-serif;*/
-  font-family: 'Josefin Sans', sans-serif;
-  /* color: black; */
+  /* font-family: 'Muli', sans-serif; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Times New Roman', sans-serif;
 }
 
 
 /* ======== Resume starts here ======== */
-
-.container {
+.row-header {
   /* border-top: 1px solid gray; */
   /* border-bottom: 1px solid gray; */
   display: flex;
   justify-content: space-between;
-  /* width: 800px; */
 }
 
 .black {
@@ -25,53 +23,29 @@ body {
 
 h1,h3 {
   color: rgb(40, 111, 139);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-.resume-container .show-inline {
-  display: inline;
-}
 .resume-container h1, h2, h3, h4, p {
-  font-weight: normal;
   padding: .07em;
   margin: .07em;
 }
+
 .resume-container {
   background-color: #ffffff;
   padding: 3em;
   position: relative;
-  font-family: 'Times New Roman', sans-serif;
   margin: 0 auto;
-  /*width: 690px;*/
   width: var(--base-spacing);   /* base-spacing is a variable declared on top of page */
-  /* border: 1px solid black; */
 }
+
 .header {
   margin: 0 auto;
   text-align: center;
 }
-div.header > h1, div.header > h3 {
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-div.contact-info {
-  /* border-top: 1px solid blue; */
-  /*border-bottom: 1px solid blue;*/
-  margin-bottom: 5px;
-}
-div.contact-info a {
-  text-decoration: none;
-}
-div.contact-info a:hover {
-  text-decoration: underline;
-}
-.recent-projects #cargo {
-  /* color: inherit; */
-}
 
 .resume-container div ul, .resume-container div h3 {
-  margin: .2em 0;
+  margin: .35em 0;
 }
 
 
@@ -93,10 +67,6 @@ div.contact-info a:hover {
     padding-left: 1.5em;
   }
 
-  .recent-projects #cargo {
-    font-size: 80%;
-    word-wrap: break-word;
-  }
 } /*end media query */
 
 /* ======== max-width 768px start here ======== */
