@@ -16,6 +16,13 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- 2 scripts for EmailJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_Z1vVfovQs0zoeH2Z1yoac");
+    })();
+  </script>
 </head>
 
 <body>
@@ -34,10 +41,14 @@
        <p>Hello,</p>
        <h2>I AM ARIEL COOK</h2>
        <h6>
-         <a href="" class="typewrite" data-period="2000"
+          <a href="" class="typewrite" data-period="2000"
+          data-type='["FULL STACK WEB DEVELOPER", "SEEKING FULL TIME JOB OPPORTUNITIES.", "HIT ME UP, LETS HAVE SOME COFFEE AND CHAT" ]'>
+            <span class="wrap"></span>
+          </a>
+         <!-- <a href="" class="typewrite" data-period="2000"
          data-type='["WEB DEVELOPER.", "I LOVE TO CODE.", "DESIGN, TECHNOLOGY...", "I AM YOUR MAN!" ]'>
            <span class="wrap"></span>
-         </a>
+         </a> -->
        </h6>
      </div>
    </div>
@@ -98,15 +109,14 @@
 
   <section id="contact" class="section4">
     <div class="container-section4">
-      <!-- <h2>Section 4</h2> -->
+      <!-- CONTACT FORM -->
       <aside class="left">
         <br><br>
         <h2>Get In Touch</h2>
-          <!-- <form action="mailto:acookonline.com" method="post" enctype="text/plain"> -->
-          <form action="mailto:arielcook101014@gmail.com" method="post" enctype="text/plain">
 
+        <form class="needs-validation">
       		<label for="fname">First Name<sup><i class="" style="font-size:5px;color:red"></i></sup></label><br>
-      		<input type="fname" name="fname" id="fname" required><br><br>
+          <input type="fname" name="fname" id="fname" required><br><br>
 
       		<label for="lname">Last Name<sup><i class="" style="font-size:5px;color:red"></i></sup></label><br>
       		<input type="lname" name="lname" id="lname" required><br><br>
@@ -117,12 +127,12 @@
       		<label for="email">Your email address<sup><i class="" style="font-size:15px;color:red"></i></sup></label><br>
       		<input type="email" name="email" id="email" required><br><br>
 
-      		Comments:<br>
-      		<textarea name="comments" placeholder="If you have any comments, please enter them here.">
+      		Message:<br>
+      		<textarea id="message" name="message" placeholder="Enter message here.">
       		</textarea><br><br>
 
-    			<input type="submit" name="submit" value="Submit">
-          <input type="reset" name="reset" value="Reset">
+    			<input id="submit" type="submit" name="submit" value="Submit">
+          <input id="reset" type="reset" name="reset" value="Reset">
       	</form>
       </aside>
 
@@ -137,9 +147,8 @@
 
         <i class="fa fa-envelope fa-lg" style="color:#008CBA;"></i><br>
         <p>Email</p>
-        <!-- <a id="myGmail" href="mailto:acookonline.com"><p>arielcook101014@gmail.com</p></a> -->
-        <a id="myGmail" href="mailto:arielcook101014@gmail.com"><p>arielcook101014@gmail.com</p></a>
-
+        <!-- <a id="myGmail" href="mailto:arielcook101014@gmail.com"><p>arielcook101014@gmail.com</p></a> -->
+        <p>arielcook101014@gmail.com</p>
 
         <section class="follow">
           <h3>Give me a follow on these sites:</h3>
@@ -152,7 +161,7 @@
       </aside>
     </div>
     <footer>
-      <div>Copyright &copy; 2018 Ariel Cook</div>
+      <div>Copyright &copy; 2019 Ariel Cook</div>
       <span>JavaScript | Reactjs | HTML5 | CSS3 | Front-End Development | Node.js</span>
     </footer>
   </section>
@@ -161,6 +170,7 @@
 <!-- load this file here not in the head section; it wont work -->
   <script src="js/buttonToTopOfPg.js"></script>
   <script src="js/typeEffect.js"></script>
+  <script src="js/helper.js"></script>
 
 </body>
 </html>
