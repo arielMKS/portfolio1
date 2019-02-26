@@ -72,11 +72,13 @@ body {
   height: auto;
   /*padding: 1em;*/
   background-color: #E2F1F3;
+
 }
 .grid-container-section2 {
   border-radius: 5px;
   padding: .5em;
-  background-color: #666666;
+  /* background-color: #666666; */
+  background-color: #3b3a3a;
   width: 70%;
   text-align: center;
   margin: 0 auto;
@@ -101,8 +103,9 @@ body {
 .project4 { grid-area: project4;}
 
 .grid-container-section2 .header {
+  letter-spacing: 2px;
   background: transparent;
-  color: #0086b3;
+  color: yellow;
   text-shadow:0 -1px 0 rgba(0,0,0,0.5);
 }
 .grid-container-section2 img {
@@ -163,6 +166,7 @@ body {
 }
 div.section3-header h2 {
   text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+  color: yellow;
   /*-webkit-text-stroke: .05em gray;
   text-stroke: .05em gray;*/
 }
