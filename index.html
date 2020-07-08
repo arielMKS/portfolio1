@@ -1,178 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Personal web site for front end web developer seeking new opportunities">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Reactjs">
-  <meta name="author" content="Ariel Cook">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Personal web site for front end web developer seeking new opportunities"
+    />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Reactjs" />
+    <meta name="author" content="Ariel Cook" />
 
-  <title>Ariel Cook: Web Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/buttonToTopOfPg.css">
-  <!-- css style for scroll to top page button -->
+    <title>Ariel Cook: Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/buttonToTopOfPg.css" />
+    <!-- css style for scroll to top page button -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <!-- 2 scripts for EmailJS -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <!-- 2 scripts for EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
         emailjs.init("user_Z1vVfovQs0zoeH2Z1yoac");
-    })();
-  </script>
-</head>
+      })();
+    </script>
+  </head>
 
-<body>
-  <section id="outerWrapperId" class="section1">
-    <div class="overlay">
-    <nav>
-      <ul class="topnav">
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.html"  target="_blank">Resume</a></li>
-        <li><a href="#aboutMe">About</a></li>
-        <li><a href="#works">Portfolio</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-     <div class="section1-text">
-       <p>Hello,</p>
-       <h2>I AM ARIEL COOK</h2>
-       <h6>
-          <a href="" class="typewrite" data-period="2000"
-          data-type='["JAVASCRIPT WEB DEVELOPER...", "I LOVE TO CODE", "PLEASE CONTACT ME, LETS HAVE A CHAT." ]'>
-            <span class="wrap"></span>
+  <body>
+    <section id="outerWrapperId" class="section1">
+      <div class="overlay">
+        <nav>
+          <ul class="topnav">
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="resume.html"  target="_blank">Resume</a></li> -->
+            <li>
+              <a href="./images/Cook_Ariel_Resume.pdf" target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+        <div class="section1-text">
+          <p>Hello,</p>
+          <h2>I AM ARIEL COOK</h2>
+          <h6>
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='["WEB DEVELOPER", "I LOVE TO CODE", "CONTACT ME, LETS HAVE A CHAT." ]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </h6>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section2">
+      <div class="grid-container-section2">
+        <div class="header"><h2>My Portfolio</h2></div>
+
+        <div class="project1">
+          <h4>LGI BRANDING</h4>
+          <a href="http://lgibranding.com/" target="_blank">
+            <img src="images/LGI1.jpeg" alt="LGI Branding Website Image" />
           </a>
-         <!-- <a href="" class="typewrite" data-period="2000"
-         data-type='["WEB DEVELOPER.", "I LOVE TO CODE.", "DESIGN, TECHNOLOGY...", "I AM YOUR MAN!" ]'>
-           <span class="wrap"></span>
-         </a> -->
-       </h6>
-     </div>
-   </div>
-  </section>
+          <h4>Leadership Group International, LLC</h4>
+          <p>A responsive website for a Brand Development Company</p>
+        </div>
 
-  <section id="works" class="section2">
-    <div class="grid-container-section2">
-      <div class="header"><h2>My Portfolio</h2></div>
-      
-      <div class="project1">
-        <a href="http://lgibranding.com/" target="_blank">
-          <img src="images/LGI1.jpeg" alt="LGI Branding Website Image">
-        </a>
-        <h4>Leadership Group International, LLC</h4>
-        <p>A responsive website for a Brand Development Company</p>
+        <div class="project2">
+          <h4>MY CHAT APP</h4>
+          <a href="https://ariel-chat1.herokuapp.com/" target="_blank">
+            <img src="images/chat-app.png" alt="my website image" />
+          </a>
+
+          <h4>Sign up, login and select a room to join</h4>
+          <p>A chap app built with React, Socket.io, Nodejs</p>
+        </div>
+
+        <div class="project3">
+          <h4>LAYUP Website</h4>
+
+          <a href="https://layouthuprising.org/" target="_blank">
+            <img src="images/layup1.png" alt="my website image" />
+          </a>
+          <h4>Los Angeles Youth Uprising</h4>
+          <p>
+            A website built in Wordpress
+          </p>
+        </div>
+
+        <div class="project4">
+          <h4>PHONE STORE</h4>
+          <a href="https://ariels-phone-store.netlify.app/" target="_blank">
+            <img src="images/phone-app.jpg" alt="my website image" />
+          </a>
+          <h4>An e-commerce website</h4>
+          <p>A React app with PayPal payment integration</p>
+        </div>
       </div>
+    </section>
 
-      <div class="project2">
-          <!-- <a href="https://grolo.azurewebsites.net/login" target="_blank"> -->
-            <img src="images/grolo3-1100x547.jpeg" alt="my website image">
-          <!-- </a> -->
-          <h4>Grolo Marketing App</h4>
-          <p>A software-as-a-service platform for marketing agencies.</p>
+    <section id="aboutMe" class="section3">
+      <div class="grid-container-section3">
+        <div class="section3-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="section3-left">
+          <img src="images/arielphoto1.jpeg" alt="Ariels Photo" />
+        </div>
+        <div class="section3-right">
+          <br />
+          <h2>
+            Hey there! I'm Ariel&nbsp;<span class="pronounce"
+              >(pronounced Ahr-iel)</span
+            >
+          </h2>
+          <p>
+            I'm a web developer based in Los Angeles, California. Currently, I'm
+            studying Computer Science at a local college. I love to code, and
+            build awesome applications! During my free time, I enjoy jogging at
+            the
+            <a
+              target="_blank"
+              href="https://www.discoverlosangeles.com/blog/where-run-los-angeles-las-top-10-running-paths"
+              >local parks</a
+            >, lifting weights, and cooking.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="project3">
-        <!-- <h4>Project 3</h4> -->
-        <img src="images/girlTraining2.jpeg" alt="my website image">
-        <h4>Personal Trainers</h4>
-        <p>Under construction: A responsive website to search for personal trainers.</p>
+    <section id="contact" class="section4">
+      <div class="container-section4">
+        <!-- CONTACT FORM -->
+        <aside class="left">
+          <br /><br />
+          <h2>Get In Touch</h2>
+
+          <form class="needs-validation">
+            <label for="fname"
+              >First Name<sup
+                ><i
+                  class=""
+                  style="font-size: 5px; color: red;"
+                ></i></sup></label
+            ><br />
+            <input type="fname" name="fname" id="fname" required /><br /><br />
+
+            <label for="lname"
+              >Last Name<sup
+                ><i
+                  class=""
+                  style="font-size: 5px; color: red;"
+                ></i></sup></label
+            ><br />
+            <input type="lname" name="lname" id="lname" required /><br /><br />
+
+            <label for="phone"
+              >Your phone number<sup
+                ><i
+                  class=""
+                  style="font-size: 5px; color: red;"
+                ></i></sup></label
+            ><br />
+            <input type="tel" name="phone" id="phone" required /><br /><br />
+
+            <label for="email"
+              >Your email address<sup
+                ><i
+                  class=""
+                  style="font-size: 15px; color: red;"
+                ></i></sup></label
+            ><br />
+            <input type="email" name="email" id="email" required /><br /><br />
+
+            Message:<br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter message here."
+            >
+            </textarea
+            ><br /><br />
+
+            <input id="submit" type="submit" name="submit" value="Submit" />
+            <input id="reset" type="reset" name="reset" value="Reset" />
+          </form>
+        </aside>
+
+        <aside class="right">
+          <!-- <h3>Right side</h3> -->
+          <br /><br />
+          <i class="fa fa-phone fa-lg" style="color: #008cba;"></i><br />
+          <p><strong>Phone</strong></p>
+          <p>1-619-455-9608</p>
+
+          <i class="fa fa-map-marker fa-lg" style="color: #008cba;"></i><br />
+          <p>Address</p>
+          <p>Los Angeles, California</p>
+
+          <i class="fa fa-envelope fa-lg" style="color: #008cba;"></i><br />
+          <p>Email</p>
+          <!-- <a id="myGmail" href="mailto:arielcook101014@gmail.com"><p>arielcook101014@gmail.com</p></a> -->
+          <p>arielcook101014@gmail.com</p>
+
+          <section class="follow">
+            <h3>Give me a follow on these sites:</h3>
+            <a
+              href="https://www.linkedin.com/in/ariel-cook-336930ab/"
+              target="_blank"
+            >
+              <span
+                ><i
+                  class="fab fa-linkedin fa-2x"
+                  style="color: #008cba;"
+                ></i></span
+            ></a>
+
+            <a href="https://github.com/arielMKS" target="_blank">
+              <span
+                ><i
+                  class="fab fa-github fa-2x"
+                  style="color: #008cba;"
+                ></i></span
+            ></a>
+          </section>
+        </aside>
       </div>
+      <footer>
+        <div>Copyright &copy; 2019 Ariel Cook</div>
+        <span
+          >JavaScript | Reactjs | HTML5 | CSS3 | Front-End Development |
+          Node.js</span
+        >
+      </footer>
+    </section>
 
-      <div class="project4">
-        <!-- <h4>Project 4</h4> -->
-          <img src="images/salmonDish2.jpeg" alt="my website image">
-        <h4>Sam's Diner</h4>
-        <p>Under construction: A responsive website for a local restaurant.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="aboutMe" class="section3">
-    <div class="grid-container-section3">
-      <div class="section3-header">
-        <!-- <h2>MORE INFO ABOUT ME</h2> -->
-        <h2>About Me</h2>
-
-      </div>
-      <div class="section3-left">
-        <img src="images/arielphoto1.jpeg" alt="Ariels Photo">
-      </div>
-      <div class="section3-right">
-        <br>
-        <h2>Hey there! I'm Ariel&nbsp;<span class="pronounce">(pronounced R-yel)</span></h2>
-        <p>I'm a web developer based in Los Angeles, California. Currently, I'm studying Computer Science at a local college. I love to code, and build awesome applications! During my free time, I enjoy jogging at the <a target="_blank" href="https://www.discoverlosangeles.com/blog/where-run-los-angeles-las-top-10-running-paths">local parks</a>, lifting weights, and cooking healthy foods.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section4">
-    <div class="container-section4">
-      <!-- CONTACT FORM -->
-      <aside class="left">
-        <br><br>
-        <h2>Get In Touch</h2>
-
-        <form class="needs-validation">
-      		<label for="fname">First Name<sup><i class="" style="font-size:5px;color:red"></i></sup></label><br>
-          <input type="fname" name="fname" id="fname" required><br><br>
-
-      		<label for="lname">Last Name<sup><i class="" style="font-size:5px;color:red"></i></sup></label><br>
-      		<input type="lname" name="lname" id="lname" required><br><br>
-
-      		<label for="phone">Your phone number<sup><i class="" style="font-size:5px;color:red"></i></sup></label><br>
-      		<input type="tel" name="phone" id="phone" required><br><br>
-
-      		<label for="email">Your email address<sup><i class="" style="font-size:15px;color:red"></i></sup></label><br>
-      		<input type="email" name="email" id="email" required><br><br>
-
-      		Message:<br>
-      		<textarea id="message" name="message" placeholder="Enter message here.">
-      		</textarea><br><br>
-
-    			<input id="submit" type="submit" name="submit" value="Submit">
-          <input id="reset" type="reset" name="reset" value="Reset">
-      	</form>
-      </aside>
-
-      <aside class="right">
-        <!-- <h3>Right side</h3> -->
-        <br><br>
-        <i class="fa fa-phone fa-lg" style="color:#008CBA;"></i><br>
-        <p><strong>Phone</strong></p><p>1-800-123-4567</p>
-
-        <i class="fa fa-map-marker fa-lg" style="color:#008CBA;"></i><br>
-        <p>Address</p><p>Los Angeles, California</p>
-
-        <i class="fa fa-envelope fa-lg" style="color:#008CBA;"></i><br>
-        <p>Email</p>
-        <!-- <a id="myGmail" href="mailto:arielcook101014@gmail.com"><p>arielcook101014@gmail.com</p></a> -->
-        <p>arielcook101014@gmail.com</p>
-
-        <section class="follow">
-          <h3>Give me a follow on these sites:</h3>
-          <a href="https://www.linkedin.com/in/ariel-cook-336930ab/" target="_blank">
-          <span><i class="fab fa-linkedin fa-2x" style="color:#008CBA;"></i></span></a>
-
-          <a href="https://github.com/arielMKS" target="_blank">
-          <span><i class="fab fa-github fa-2x" style="color:#008CBA;"></i></span></a>
-        </section>
-      </aside>
-    </div>
-    <footer>
-      <div>Copyright &copy; 2019 Ariel Cook</div>
-      <span>JavaScript | Reactjs | HTML5 | CSS3 | Front-End Development | Node.js</span>
-    </footer>
-  </section>
-
-
-<!-- load this file here not in the head section; it wont work -->
-  <script src="js/buttonToTopOfPg.js"></script>
-  <script src="js/typeEffect.js"></script>
-  <script src="js/helper.js"></script>
-
-</body>
+    <!-- load this file here not in the head section; it wont work -->
+    <script src="js/buttonToTopOfPg.js"></script>
+    <script src="js/typeEffect.js"></script>
+    <script src="js/helper.js"></script>
+  </body>
 </html>
