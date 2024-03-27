@@ -52,3 +52,13 @@
 // var message = document.getElementById("message").value;
 //   });
 // })();
+
+(function addFooterText() {
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const timestamp = new Date();
+    const fullYear = timestamp.getUTCFullYear();
+    const copyrightSymbol = `&copy;`;
+    const footerText =`Copyright ${copyrightSymbol} ${fullYear} Ariel Cook`;
+    document.querySelector(".footerCopy").innerHTML = footerText;
+  });
+})()
